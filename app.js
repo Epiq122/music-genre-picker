@@ -24,16 +24,23 @@ function rock(e) {
 
   let input = document.querySelector('#music-input').value;
   switch (input.toLowerCase()) {
-    case 'rock':
-      document.querySelector('#reveal').textContent = 'THIS IS SPARTAs';
+    case 'alternative rock':
+      document.querySelector('#reveal').style.backgroundImage =
+        'url(./images/radio.jpeg)';
       input = document.querySelector('#music-input').value = '';
       break;
     case 'classic rock':
-      document.querySelector('#reveal').textContent = 'THIS IS SPARTA';
+      document.querySelector('#reveal').style.backgroundImage =
+        'url(./images/stones.jpeg)';
       input = document.querySelector('#music-input').value = '';
       break;
     case 'rap':
-      document.querySelector('#reveal').textContent = 'THIS IS SPARTAsssssss';
+      document.querySelector('#reveal').style.backgroundImage =
+        'url(./images/tupac.jpeg)';
+      input = document.querySelector('#music-input').value = '';
+      break;
+    case 'country':
+      document.querySelector('#reveal').textContent = 'Country';
       input = document.querySelector('#music-input').value = '';
       break;
     default:
